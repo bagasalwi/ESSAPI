@@ -4,7 +4,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>ESS API</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -83,10 +83,10 @@
                 <div class="title m-b-md">
                     Employee Self Service API
                 </div>
-                <p>this website contains API for Thesis support</p>
+                <p>this website contains API for all Human Resource Stuff</p>
 
                 <div class="links">
-                    <a href="https://www.instagram.com/bagasalwi/">Instagram</a>
+                    <a href="https://www.instagram.com/bagasalwi/">Build by Bagas Alwi</a>
                 </div>
             </div>
         </div>
