@@ -30,12 +30,19 @@ class SalaryController extends Controller
         $data['salary'] = DB::table('salaries')->get()->where('user_id', $request->user_id);
         // dd($data['salary']);
         $data['user'] = DB::table('users')->get()->where('id', $request->user_id);
-
-
-        // dd($data['user'][2]->email);
+        
+        $increment ="";
+        if($request->user_id){
+            $increment = $request->user_id - 1;
+        }
+    
+        // dd($data['user'][$increment]->email);
+        // dd($increment);
+        
         $data["email"]=$request->user_id;
-        $data["client_name"]= $data['user'][2]->email;
+        $data["client_name"]= $data['user'][$increment]->email;
         $data["subject"]='Salary Invoice';
+        $data["increment"] = $increment;
 
         $pdf = PDF::loadView('SalaryRecord', $data);
 

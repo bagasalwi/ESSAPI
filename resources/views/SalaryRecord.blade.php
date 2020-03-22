@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 <title>Aloha!</title>
 
 <style type="text/css">
@@ -47,7 +47,7 @@
   <table width="100%">
     <tr>
         <td><strong>From:</strong> Financial Team Management</td>
-        <td><strong>To:</strong> {{ $user[2]->name }} - {{ $user[2]->posisi }}</td>
+        <td><strong>To:</strong> {{ $user[$increment]->name }} - {{ $user[$increment]->posisi }}</td>
     </tr>
 
   </table>
@@ -68,9 +68,9 @@
       <tr>
         <th scope="row">1</th>
         <td>Monthly Salary</td>
-        <td align="right">{{ $salary[0]->tanggal }}</td>
-        <td align="right">{{ $salary[0]->nominal }}</td>
-        <td align="right">{{ $salary[0]->nominal }}</td>
+        <td align="right">{{ $salary[$increment]->tanggal }}</td>
+        <td align="right">{{ $salary[$increment]->nominal }}</td>
+        <td align="right">{{ $salary[$increment]->nominal }}</td>
       </tr>
     </tbody>
 
@@ -78,7 +78,7 @@
         <tr>
             <td colspan="3"></td>
             <td align="right">Subtotal Rp.</td>
-            <td align="right">{{ $salary[0]->nominal }}</td>
+            <td align="right">{{ $salary[$increment]->nominal }}</td>
         </tr>
         <tr>
             <td colspan="3"></td>
@@ -88,7 +88,7 @@
         <tr>
             <td colspan="3"></td>
             <td align="right">Total Rp.</td>
-            <td align="right" class="gray">Rp. {{ $salary[0]->nominal }}</td>
+            <td align="right" class="gray">Rp. {{ $salary[$increment]->nominal }}</td>
         </tr>
     </tfoot>
   </table>
