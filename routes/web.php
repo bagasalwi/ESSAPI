@@ -12,3 +12,9 @@
 */
 
 Route::get('/', 'FrontController@dashboard');
+Route::get('/data-cuti', 'FrontController@cuti');
+Route::get('/data-user', 'FrontController@user');
+Route::get('/data-asset', 'FrontController@asset');
+Route::get('/data-reimburse', 'FrontController@reimburse');
+Route::get('/data-transport', 'FrontController@transport');
+Route::get('/data-absensi', 'FrontController@absensi');

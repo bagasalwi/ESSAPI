@@ -38,7 +38,7 @@
             <div class="navbar-bg"></div>
 
             <nav class="navbar navbar-expand-lg main-navbar">
-                <a href="{{ url('/') }}" class="navbar-brand sidebar-gone-hide">BCreative Kontrakan</a>
+                <a href="" class="navbar-brand sidebar-gone-hide">Employee Self Service</a>
                 <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
                 <div class="nav-collapse">
                     <a class="sidebar-gone-show nav-collapse-toggle nav-link" href="#">
@@ -46,49 +46,40 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="{{ url('jeniskamar') }}"
-                                class="nav-link">Kamar</a></li>
+                                class="nav-link">About</a></li>
                         <li class="nav-item"><a href="{{ url('ketentuan') }}"
                                 class="nav-link">Ketentuan</a></li>
                     </ul>
                 </div>
-                {{-- <ul class="navbar-nav navbar-right ml-auto">
-                    <figure class="avatar ">
-                        <img src="{{ URL::asset('user-images/' . Auth::user()->profile_pic) }}" alt="...">
-                    </figure>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"
-                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            
-                            <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                        <div class="dropdown-title">Logged {{ \Carbon\Carbon::parse(Auth::user()->last_login_at)->diffForHumans() }}
-                        </div>
-                        <a href="{{ url('myprofile') }}" class="dropdown-item has-icon">
-                            <i class="far fa-user"></i> Profile
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                            class="dropdown-item has-icon text-danger">
-                            <i class="fas fa-sign-out-alt"></i> Logout
-                        </a>
-            
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                        </div>
-                    </li>
-                </ul> --}}
             </nav>
             
             <nav class="navbar navbar-secondary navbar-expand-lg">
                 <div class="container">
                     <ul class="navbar-nav">
-                        
                         <li class="nav-item active">
-                        <li class="nav-item">
-                            <a href="/cuti" class="nav-link"><i
-                                    class="fas fa-online"></i><span>Test1</span></a>
+                        <li class="nav-item {{ $nav == 'User' ? 'active' : '' }}">
+                            <a href="{{ url('data-user') }}" class="nav-link"><i
+                                    class="fas fa-user"></i><span>User</span></a>
+                        </li>
+                        <li class="nav-item {{ $nav == 'Cuti' ? 'active' : '' }}">
+                            <a href="{{ url('data-cuti') }}" class="nav-link "><i
+                                    class="fas fa-user-minus"></i><span>Cuti</span></a>
+                        </li>
+                        <li class="nav-item {{ $nav == 'Asset' ? 'active' : '' }}">
+                            <a href="{{ url('data-asset') }}" class="nav-link "><i
+                                    class="fas fa-laptop"></i><span>Asset</span></a>
+                        </li>
+                        <li class="nav-item {{ $nav == 'Reimburse' ? 'active' : '' }}">
+                            <a href="{{ url('data-reimburse') }}" class="nav-link "><i
+                                    class="fas fa-money-bill-wave-alt"></i><span>Reimburse</span></a>
+                        </li>
+                        <li class="nav-item {{ $nav == 'Transport' ? 'active' : '' }}">
+                            <a href="{{ url('data-transport') }}" class="nav-link "><i
+                                    class="fas fa-bus"></i><span>Transport</span></a>
+                        </li>
+                        <li class="nav-item {{ $nav == 'Absensi' ? 'active' : '' }}">
+                            <a href="{{ url('data-absensi') }}" class="nav-link "><i
+                                    class="fas fa-user-clock"></i><span>Absensi</span></a>
                         </li>
                     </ul>
                 </div>
