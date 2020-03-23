@@ -18,31 +18,6 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <h4>TRANSACTION </h4>
-                        <h4><span class="badge badge-primary"></span></h4>
-                        <div class="card-header-action">
-                            <a data-collapse="#mycard-collapse" class="btn btn-icon btn-secondary" href="#"><i
-                                    class="fas fa-minus"></i></a>
-                        </div>
-                    </div>
-                    <div class="collapse show" id="mycard-collapse">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-
         <div class="section-body">
             <div class="row">
                 
