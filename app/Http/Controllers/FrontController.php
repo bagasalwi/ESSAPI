@@ -17,6 +17,8 @@ class FrontController extends Controller
 {
     public function dashboard(){
         $data['title'] = 'Employee Self Service Data Dashboard';
+        $data['nav'] = '';
+
         
         return view('front.dashboard', $data);
     }
