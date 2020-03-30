@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Employee Self Service Data</title>
+    <title>Employee Self Service API view</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ URL::asset('assets/modules/bootstrap/css/bootstrap.min.css')}}">
@@ -44,12 +44,12 @@
                     <a class="sidebar-gone-show nav-collapse-toggle nav-link" href="#">
                         <i class="fas fa-ellipsis-v"></i>
                     </a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="{{ url('jeniskamar') }}"
-                                class="nav-link">About</a></li>
+                    {{-- <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{{ url('discord') }}"
+                                class="nav-link">Discord</a></li>
                         <li class="nav-item"><a href="{{ url('ketentuan') }}"
                                 class="nav-link">Ketentuan</a></li>
-                    </ul>
+                    </ul> --}}
                 </div>
             </nav>
             

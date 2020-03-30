@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'FrontController@dashboard');
+Route::get('/discord', 'FrontController@discord');
 Route::get('/data-cuti', 'FrontController@cuti');
 Route::get('/data-user', 'FrontController@user');
 Route::get('/data-asset', 'FrontController@asset');

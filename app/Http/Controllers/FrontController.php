@@ -23,6 +23,13 @@ class FrontController extends Controller
         return view('front.dashboard', $data);
     }
 
+    public function discord(){
+        $data['title'] = 'Employee Self Service Data Dashboard';
+        $data['nav'] = '';
+
+        return view('front.dashboard', $data);
+    }
+
     public function user(){
         $data['title'] = 'Employee Self Service Data Dashboard';
         $data['nav'] = 'User';
